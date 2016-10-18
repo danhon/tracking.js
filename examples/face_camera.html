@@ -49,8 +49,7 @@
         event.data.forEach(function(rect) {
           // dashed
           context.setLineDash([5, 5]);
-          context.lineWidth="4";
-          
+          context.lineWidth="3";
           context.strokeStyle = 'Yellow';
           context.strokeRect(rect.x, rect.y, rect.width, rect.height);
           context.font = '16px Helvetica';
