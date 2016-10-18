@@ -49,14 +49,13 @@
         event.data.forEach(function(rect) {
           // dashed
           context.setLineDash([5, 5]);
+          context.lineWidth="4";
           
           context.strokeStyle = 'Yellow';
           context.strokeRect(rect.x, rect.y, rect.width, rect.height);
-          context.font = '11px Helvetica';
+          context.font = '16px Helvetica';
           context.fillStyle = "#fff";
-          context.fillText('ADMIN' + rect.x, rect.x + rect.width + 5, rect.y + 11);
-          context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 22);
-          context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 33);
+          context.fillText('ADMIN', rect.x + rect.width + 5, rect.y + 11);
         });
       });
 
